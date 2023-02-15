@@ -1,0 +1,144 @@
+
+<div class="mainbox">
+    <div class="upperbox">
+        <div class="leftbox">
+        <h1>My account</h1>
+        <div class="headbox">
+            <img class="myimg" src="images/user_img.avif" alt="user">
+            <div>
+                <p><b>Name: </b><%= Name %></p>
+                <p><b>Email: </b><%= Email %></p>
+                
+            </div>
+        </div>
+    </div>
+        <div class="lowbox">
+            <h2>My Orders</h2>
+            <div class="orderCard">
+                <!-- <p>Date: </p> -->
+                <p>Processing..</p>
+            </div>
+            <!-- <div class="orderCard">
+                
+            </div> -->
+        </div>
+    </div>
+    <div class="rightbox">
+        <a id="footerlogo" href="">Gasvans <i class="fa-solid fa-truck-droplet"></i></a>
+        <a id="btn" href="/logout" role="button">Log Out</a>
+
+    </div>
+
+
+   
+</div>
+
+
+<script src="https://kit.fontawesome.com/0ac5a0764e.js" crossorigin="anonymous"></script>
+
+<style>
+   body{
+    margin: 0;
+    font-family: 'Roboto',sans-serif;
+   }
+   h1{
+    width: 200px;
+   }
+   .leftbox{
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+   }
+   .upperbox{
+    display: flex;
+    justify-content: space-around;
+    gap: 70px;
+   }
+   .rightbox{
+    position: absolute;
+    bottom: 60;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 20px;
+    width: 300px;
+   }
+   #footerlogo{
+  font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+  font-size: 30px;
+  text-decoration: none;
+  color: #000000;
+}
+   .orderCard{
+    width: 400px;
+    height: 200px;
+    background-color: rgb(224, 255, 255); 
+    border: 2px solid;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+   }
+   .lowbox{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+   }
+   .headbox{
+    display: flex; 
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 40px;
+    /* width: 40%; */
+   }
+   .myimg{
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    border: 2px solid;
+    border-color: #252525;
+    box-shadow: hsla(240, 5%, 41%, 0.438) 0px 7px 20px ;                            
+   }
+    .mainbox{
+        /* display: flex; */
+        /* justify-content: space-around;   */
+        width: 70%;
+        height: 80%;
+        padding: 30px;
+        margin: auto; 
+        margin-top: 40px;
+        box-shadow: hsla(240, 5%, 41%, 0.438) 0px 7px 20px ;                            
+    }
+    #btn {
+  background: #ffffff;
+  /* background-image: -webkit-linear-gradient(top, #00ffaa, #14C38E);
+  background-image: -moz-linear-gradient(top, #00ffaa, #14C38E);
+  background-image: -ms-linear-gradient(top, #00ffaa, #14C38E);
+  background-image: -o-linear-gradient(top, #00ffaa, #14C38E);
+  background-image: linear-gradient(to bottom, #00ffaa, #14C38E); */
+  -webkit-border-radius: 39;
+  -moz-border-radius: 39;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 2px 8px #14C38E;
+  -moz-box-shadow: 0px 2px 8px #14C38E;
+  box-shadow: 0px 2px 8px #14C38E;
+  font-family: Arial;
+  color: #ff0000;
+  border: none;
+  font-size: 20px;
+  letter-spacing: normal;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  width: 80px;
+}
+#btn:hover {
+  background: #ff0000; 
+  color: #ffffff;
+  text-decoration: none;
+}
+</style>

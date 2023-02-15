@@ -1,0 +1,162 @@
+<script src="https://kit.fontawesome.com/0ac5a0764e.js" crossorigin="anonymous"></script>
+<div class="login-container">
+    <div class="login-leftbox">
+        <h1>Contact Us</h1>
+        <form class="login-form" action="/contact" method="post">
+            <div class="inputbox">
+                <input type="text" name="username" placeholder="Full Name" required>
+                <i class="fa-solid fa-user"></i>
+            </div> 
+            <div class="inputbox">
+                <input type="email" name="useremail" placeholder="Email" required>
+                <i class="fa-solid fa-envelope"></i>
+            </div> 
+            <div class="inputbox">
+                <input type="text" name="message" placeholder="Your Message" required>
+                <i class="fa-solid fa-message"></i>
+                        </div> 
+            <button class="login-btn" type="submit">Send</button>
+        </form>
+    </div>
+
+    <div class="login-rightbox">
+        <div class="login-rightbox-container">
+            <h1>Welcome</h1>
+            <hr class="welcomehr">
+            <p class="login-rightbox-container-text">GASVANS is an online platform through which you can prebook/order refueling of your DG Sets or any diesel and petrol equipment at your location anytime & anywhere!</p>
+        </div>
+    </div>
+               
+
+
+</div>
+       
+<style>
+body{
+    margin: 0%;
+    font-family: 'Roboto', sans-serif !important;
+}
+h1{
+    width: 240px;
+}
+.login-container{
+    width: 65%;
+    margin: auto;
+    margin-top:100px;
+    box-shadow:4px 3.1px 7.1px rgba(0, 0, 0, 0.045),9.2px 7.2px 19.5px rgba(0, 0, 0, 0.065),18.8px 14.7px 47px rgba(0, 0, 0, 0.085),55px 43px 156px rgba(0, 0, 0, 0.13);
+    display: flex;
+    justify-content: center;
+}
+
+.login-leftbox {
+    padding: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* gap: 20px; */
+}
+.login-rightbox{
+    padding: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(45deg,#14C38E,#00ffaa);
+    /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='442' height='442' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23444444' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%2304FF99'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E"); */
+
+}
+.inputbox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+input{
+    width: 320px;
+    padding: 10px;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    box-shadow: none;
+    border-color: #ced4da
+}
+input:focus{
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    box-shadow: none;
+}
+
+.input::placeholder{
+   font-size: 18px;
+}
+a{
+    font-family: 'Open Sans',sans-serif;
+  font-size: 16px;
+  color: #525252;
+  text-decoration: none;
+  letter-spacing: 3px;
+}
+.login-form{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.login-btn{
+    background: linear-gradient(45deg,#14C38E,#00ffaa);
+    /* background-color: #00ffaa; */
+    border-radius: 30px;
+    padding: 10px;
+    font-size: 20px;
+    color: #fff;
+    border: none;
+    box-shadow:4px 3.1px 7.1px rgba(0, 0, 0, 0.045),9.2px 7.2px 19.5px rgba(0, 0, 0, 0.065),18.8px 14.7px 47px rgba(0, 0, 0, 0.085),55px 43px 156px rgba(0, 0, 0, 0.13);
+    cursor: pointer;
+    margin-top: 10px;
+}
+.login-btn:hover{
+    background-color: #00b176;
+}
+::placeholder{
+    color: #929292;
+    font-size: 15px;
+}
+
+.login-text{
+    margin-left: 27px;
+}
+p{
+    letter-spacing: 1px;
+}
+.register-text{
+    text-decoration: none;
+    color: #000e8b;
+    /* letter-spacing: normal; */
+}
+.login-rightbox-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.welcomehr{
+    width: 200px;
+    color: black;
+}
+
+
+
+
+
+
+
+</style>
+
+
+
+<%- include('partials/footer')   %>

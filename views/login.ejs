@@ -1,0 +1,149 @@
+<script src="https://kit.fontawesome.com/0ac5a0764e.js" crossorigin="anonymous"></script>
+<div class="login-container">
+    <div class="login-leftbox">
+        <h1>Login</h1>
+        <form class="loginform" action="/login" method="post">
+            <div class="inputbox">
+                <input type="text" name="username" placeholder="Your Name" required>
+                <i class="fa-solid fa-user"></i>
+            </div> 
+            <div class="inputbox">
+                <input type="email" name="useremail" placeholder="Email" required>
+                <i class="fa-solid fa-envelope"></i>
+            </div> 
+            <div class="inputbox">      
+                <input type="password" name="password" placeholder="Password" required>
+                <i class="fa-solid fa-lock"></i>
+            </div> 
+            <button id="btn" class="login-btn" type="submit">Login</button>
+        </form>
+        <p class="login-text">
+            Don't have an account?
+            <span>
+             <a class="register-text" href="/register">Create your account</a>   
+            </span>
+        </p>
+    </div>
+
+    <div class="login-rightbox">
+        <div class="login-rightbox-container">
+            <h1>Welcome</h1>
+            <hr class="welcomehr">
+            <p class="login-rightbox-container-text">GASVANS is an online platform through which you can prebook/order refueling of your DG Sets or any diesel equipment at your location anytime & anywhere!</p>
+        </div>
+    </div>
+               
+
+
+</div>
+       
+<style>
+body{
+    margin: 0%;
+    font-family: 'Roboto', sans-serif !important;
+}
+h1{
+    width: 140px;
+}
+.login-container{
+    width: 65%;
+    margin: auto;
+    margin-top:80px;
+    box-shadow:4px 3.1px 7.1px rgba(0, 0, 0, 0.045),9.2px 7.2px 19.5px rgba(0, 0, 0, 0.065),18.8px 14.7px 47px rgba(0, 0, 0, 0.085),55px 43px 156px rgba(0, 0, 0, 0.13);
+    display: flex;
+    justify-content: center;
+}
+
+.login-leftbox {
+    padding: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* gap: 20px; */
+}
+.login-rightbox{
+    padding: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(45deg,#14C38E,#00ffaa);
+
+}
+.inputbox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+input{
+    width: 320px;
+    padding: 10px;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    box-shadow: none;
+    border-color: #ced4da
+}
+input:focus{
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    box-shadow: none;
+}
+
+.input::placeholder{
+   font-size: 18px;
+}
+
+.loginform{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    /* margin-bottom: 50px; */
+}
+
+.login-btn{
+    background: linear-gradient(45deg,#14C38E,#00ffaa);
+    border-radius: 30px;
+    padding: 10px;
+    font-size: 20px;
+    color: #fff;
+    border: none;
+    box-shadow:4px 3.1px 7.1px rgba(0, 0, 0, 0.045),9.2px 7.2px 19.5px rgba(0, 0, 0, 0.065),18.8px 14.7px 47px rgba(0, 0, 0, 0.085),55px 43px 156px rgba(0, 0, 0, 0.13);
+    cursor: pointer;
+    margin-top: 10px;
+}
+#btn:hover{
+    background-color: #14C38E;
+}
+::placeholder{
+    color: #929292;
+    font-size: 15px;
+}
+
+.login-text{
+    margin-left: 27px;
+}
+
+.register-text{
+    text-decoration: none;
+    color: #000e8b;
+}
+.login-rightbox-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.welcomehr{
+    width: 200px;
+    color: black;
+}
+
+
+
+</style>

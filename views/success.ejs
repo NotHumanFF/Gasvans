@@ -1,0 +1,92 @@
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<lottie-player class="successSvg" src="https://assets1.lottiefiles.com/packages/lf20_5cl8ifa4.json"  background="transparent"  speed="0.4"  style="width: 300px; height: 300px;" loop autoplay></lottie-player>
+
+<h1 class="mainhead">Thank You!</h1>
+
+<p>Your Order has been placed, Thanks a bunch for filling that out. just like you do! We really appreciate you giving us a moment of your time today.</p>
+<p>If you have any suggesstion or feedback you can <a class="cntus" href="/contact">Contact us </a>here.</p>
+
+
+<div class="btnbox">
+    <form action="/success" method="post">
+<h4>You can track your order from Your account</h4>
+    <button type="submit" class="btn">My Account</button>
+    <p  class="or">Or</p>
+    <a class="btn" href="/loghome">Continue to Home</a>
+    
+</form>
+</div>
+
+
+<style>
+    body{
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        font-family: 'Roboto', sans-serif;
+
+    }
+    .or{
+        margin: 20px;
+    }
+    .btnbox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .cntus{
+        font-weight: bold;
+        text-decoration: none;
+    }
+    .cntus:hover{
+        color:#00ffaa ;
+    }
+    .successSvg{
+        position: absolute;
+        top: -30px;
+        left: 530px;
+
+    }
+    .mainhead{
+        margin: auto;
+        margin-top: 220px;
+        font-size: 4.5rem;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+    p{
+        margin: auto;
+        margin-top: 20px;
+        font-size: 16px;
+    }
+    .btn{
+        margin: auto;
+        /* margin-top: 30px; */
+        border-radius: 3px;
+        padding: 10px;
+        background: #00ffaa;
+  background-image: -webkit-linear-gradient(top, #00ffaa, #14C38E);
+  background-image: -moz-linear-gradient(top, #00ffaa, #14C38E);
+  background-image: -ms-linear-gradient(top, #00ffaa, #14C38E);
+  background-image: -o-linear-gradient(top, #00ffaa, #14C38E);
+  background-image: linear-gradient(to bottom, #00ffaa, #14C38E);
+  -webkit-border-radius: 39;
+  -moz-border-radius: 39;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 2px 8px #14C38E;
+  -moz-box-shadow: 0px 2px 8px #14C38E;
+  box-shadow: 0px 2px 8px #14C38E;       
+   color: #000000;
+   font-size: 20px;
+        border: none;
+        text-decoration: none;
+    }
+    .btn:hover {
+  background: #14C38E; 
+  text-decoration: none;
+}
+</style>
